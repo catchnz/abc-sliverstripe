@@ -101,7 +101,7 @@ class AbcPaginator extends ViewableData {
 
 		// Init some vars
 		$oTable = $table = DataObjectHelper::getTableForClass($callerClass);
-		if (Object::has_extension($callerClass,'Versioned')) {
+		if (SS_Object::has_extension($callerClass,'Versioned')) {
 			$stage = Versioned::current_stage();
 			$table = $oTable.($stage == 'Live' ? '_'.$stage : '');
 		}

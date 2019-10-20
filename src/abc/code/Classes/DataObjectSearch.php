@@ -1,6 +1,6 @@
 <?php
 
-class DataObjectSearch extends Object implements Flushable {
+class DataObjectSearch extends SS_Object implements Flushable {
 
     /**
      * [flush description]
